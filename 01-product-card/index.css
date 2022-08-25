@@ -1,0 +1,127 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+body{
+    background: #E5E5E5;
+}
+
+div.header{
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+   }
+.cards_first, .cards_second, .cards_third{
+    background: #FFFFFF;
+    height: 481.72px;
+    width: 380px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+.orange{
+    height: 213.75px;
+    width: 380px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.cards_first_title, .cards_second_title, .cards_third_title{
+    display: block;
+    font-family: 'Arial';
+    font-weight: 900;
+    font-size: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    line-height: 36px;
+}
+.cards_first_desc, .cards_second_desc, .cards_third_desc{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    margin-bottom: 68px;
+}
+.cards_second_desc{
+    margin-bottom: -4px;
+}
+.card__button{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #42940F;
+    height: 48px;
+    width: 332px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 24px;
+    border-radius: 8px;
+    border: 2px solid #42940F;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card__button:hover{
+    color: #FFFFFF;
+    background-color: #42940F;
+}
+.card__button:active{
+    color: #FFFFFF;
+    background-color: #1F5200;
+    border: 2px solid #1F5200;  
+}
+.card__button:disabled{
+    color: #FFFFFF;
+    background-color: #4E4E4E;
+    border: none;
+    cursor: auto;
+}
+.new{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #FDCFF3;   
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    width: 110px;
+    height: 24px;
+    margin-left: 17px;
+    margin-right: 15px;
+    line-height: 24px;
+}
+.last{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #FFCF56;   
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    width: 134px;
+    height: 24px;
+    line-height: 24px;
+}
+.options{
+    position: absolute;
+    padding-top: 17px;
+}
+
