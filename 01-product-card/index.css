@@ -1,9 +1,9 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
-body{
+body {
     background: #E5E5E5;
 }
 
-div.header{
+.header {
     font-family: Arial, sans-serif;
     font-size: 48px;
     font-weight: 900;
@@ -12,12 +12,12 @@ div.header{
     margin-top: 35px;
     margin-bottom: 40px;
 }
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
    }
-.cards_first, .cards_second, .cards_third{
+.card {
     background: #FFFFFF;
     height: 481.72px;
     width: 380px;
@@ -27,14 +27,15 @@ div.header{
     justify-content: center;
     box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
 }
-.orange{
+.orange {
     height: 213.75px;
     width: 380px;
     object-fit: cover;
+    object-position: 0px -255px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
-.cards_first_title, .cards_second_title, .cards_third_title{
+.card__title {
     display: block;
     font-family: 'Arial';
     font-weight: 900;
@@ -44,8 +45,8 @@ div.header{
     padding-top: 24px;
     line-height: 36px;
 }
-.cards_first_desc, .cards_second_desc, .cards_third_desc{
-    font-family: 'Arial';
+.card__desc {
+    font-family: 'Arial'; 
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -54,10 +55,15 @@ div.header{
     padding-top: 16px;
     margin-bottom: 68px;
 }
-.cards_second_desc{
-    margin-bottom: -4px;
+.second {
+    
+    
+    /*fix?*/
+    
+    
+    margin-bottom: -4px;     
 }
-.card__button{
+.card__button {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 900;
@@ -77,22 +83,22 @@ div.header{
     cursor: pointer;
 }
 
-.card__button:hover{
+.card__button:hover {
     color: #FFFFFF;
     background-color: #42940F;
 }
-.card__button:active{
+.card__button:active {
     color: #FFFFFF;
     background-color: #1F5200;
     border: 2px solid #1F5200;  
 }
-.card__button:disabled{
+.card__button:disabled {
     color: #FFFFFF;
     background-color: #4E4E4E;
     border: none;
     cursor: auto;
 }
-.new{
+.new {
     font-family: 'Arial';
     font-weight: 400;
     font-size: 16px;
@@ -107,7 +113,7 @@ div.header{
     margin-right: 15px;
     line-height: 24px;
 }
-.last{
+.last {
     font-family: 'Arial';
     font-weight: 400;
     font-size: 16px;
@@ -120,7 +126,7 @@ div.header{
     height: 24px;
     line-height: 24px;
 }
-.options{
+.options {
     position: absolute;
     padding-top: 17px;
 }
