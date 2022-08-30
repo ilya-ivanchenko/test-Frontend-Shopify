@@ -1,6 +1,7 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
 body {
     background: #E5E5E5;
+    font-family: Arial, sans-serif;
 }
 
 .header {
@@ -12,59 +13,51 @@ body {
     margin-top: 35px;
     margin-bottom: 40px;
 }
+
 .cards {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-   }
+    height: fit-content;
+}
+
 .card {
     background: #FFFFFF;
-    height: 481.72px;
     width: 380px;
     border-radius: 12px;
     margin-right: 10px;
     margin-left: 10px;
-    justify-content: center;
-    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
 }
+
 .orange {
-    height: 213.75px;
+    height: 215px;
     width: 380px;
     object-fit: cover;
     object-position: 0px -255px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
+
 .card__title {
     display: block;
-    font-family: 'Arial';
     font-weight: 900;
     font-size: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 24px;
+    padding: 24px 24px 0 24px;
     line-height: 36px;
 }
-.card__desc {
-    font-family: 'Arial'; 
+
+.card__description {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 16px;
-    margin-bottom: 68px;
+    padding: 16px 24px 0 24px;
 }
-.second {
-    
-    
-    /*fix?*/
-    
-    
-    margin-bottom: -4px;     
-}
+
 .card__button {
-    font-family: 'Arial';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -87,23 +80,25 @@ body {
     color: #FFFFFF;
     background-color: #42940F;
 }
+
 .card__button:active {
     color: #FFFFFF;
     background-color: #1F5200;
-    border: 2px solid #1F5200;  
+    border: 2px solid #1F5200;
 }
+
 .card__button:disabled {
     color: #FFFFFF;
     background-color: #4E4E4E;
     border: none;
     cursor: auto;
 }
+
 .new {
-    font-family: 'Arial';
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
-    background-color: #FDCFF3;   
+    background-color: #FDCFF3;
     border-radius: 8px;
     text-align: center;
     display: inline-block;
@@ -113,12 +108,12 @@ body {
     margin-right: 15px;
     line-height: 24px;
 }
+
 .last {
-    font-family: 'Arial';
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
-    background-color: #FFCF56;   
+    background-color: #FFCF56;
     border-radius: 8px;
     text-align: center;
     display: inline-block;
@@ -126,6 +121,7 @@ body {
     height: 24px;
     line-height: 24px;
 }
+
 .options {
     position: absolute;
     padding-top: 17px;
