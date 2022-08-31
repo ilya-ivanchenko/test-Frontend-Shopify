@@ -1,22 +1,26 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+:root {
+    --base-button-color: #42940F;
+    --base-active-button-color: #1F5200;
+}
+
 body {
     background: #E5E5E5;
     font-family: Arial, sans-serif;
 }
 
 .header {
-    font-family: Arial, sans-serif;
     font-size: 48px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin: 40px 0 30px 0;
 }
 
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 60px;
     height: fit-content;
 }
@@ -25,66 +29,57 @@ body {
     background: #FFFFFF;
     width: 380px;
     border-radius: 12px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
 }
 
-.orange {
+.card__image {
     height: 215px;
     width: 380px;
     object-fit: cover;
-    object-position: 0px -255px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    object-position: 0 -255px;
+    border-radius: 12px 12px 0 0;
 }
 
 .card__title {
-    display: block;
     font-weight: 900;
     font-size: 24px;
-    padding: 24px 24px 0 24px;
     line-height: 36px;
+    margin: 24px 24px 0 24px;
 }
 
 .card__description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    padding: 16px 24px 0 24px;
+    margin: 16px 24px 0 24px;
 }
 
 .card__button {
-    font-style: normal;
     font-weight: 900;
     font-size: 18px;
     line-height: 25px;
-    color: #42940F;
+    color: var(--base-button-color);
     height: 48px;
-    width: 332px;
-    align-items: center;
-    text-align: center;
     text-transform: uppercase;
-    display: block;
     margin: 24px;
     border-radius: 8px;
-    border: 2px solid #42940F;
+    border: 2px solid var(--base-button-color);
     background-color: #FFFFFF;
     cursor: pointer;
 }
 
 .card__button:hover {
     color: #FFFFFF;
-    background-color: #42940F;
+    background-color: var(--base-button-color);
 }
 
 .card__button:active {
     color: #FFFFFF;
-    background-color: #1F5200;
-    border: 2px solid #1F5200;
+    background-color: var(--base-active-button-color);
+    border-color: var(--base-active-button-color);
 }
 
 .card__button:disabled {
@@ -94,36 +89,30 @@ body {
     cursor: auto;
 }
 
-.new {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: #FDCFF3;
-    border-radius: 8px;
-    text-align: center;
-    display: inline-block;
-    width: 110px;
-    height: 24px;
-    margin-left: 17px;
-    margin-right: 15px;
-    line-height: 24px;
-}
-
-.last {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: #FFCF56;
-    border-radius: 8px;
-    text-align: center;
-    display: inline-block;
-    width: 134px;
-    height: 24px;
-    line-height: 24px;
-}
-
 .options {
     position: absolute;
     padding-top: 17px;
+    display: flex;
+    flex-direction: row;
 }
+
+.card__label {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 0 16px;
+    margin-left: 17px;
+}
+.new {
+    background-color: #FDCFF3;
+}
+
+.last {
+    background-color: #FFCF56;
+}
+
+
 
